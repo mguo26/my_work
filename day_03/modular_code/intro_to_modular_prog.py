@@ -35,16 +35,7 @@ print(f"Rectangle 3 area: {width3 * height3}")
 # and it can send back an output value (called a RETURN VALUE).
 
 def area_of_rectangle(width: int, height: int) -> int:
-    """
-    Calculate the area of a rectangle.
 
-    Parameters:
-        width (int): how wide the rectangle is
-        height (int): how tall the rectangle is
-
-    Returns:
-        int: the area of the rectangle (width * height)
-    """
     return width * height
 
 print(f"Rectangle 1 area: {area_of_rectangle(5, 10)}")
@@ -52,9 +43,9 @@ print(f"Rectangle 2 area: {area_of_rectangle(3, 7)}")
 print(f"Rectangle 3 area: {area_of_rectangle(9, 2)}")
 
     # Challenge: Add a new function area_of_circle(radius) with proper docstring.
-    import math
+import math
 
-    def area_of_circle(radius: int) -> float:
+def area_of_circle(radius: int) -> float:
     """
     Calculate the area of a circle.
 
@@ -68,8 +59,8 @@ print(f"Rectangle 3 area: {area_of_rectangle(9, 2)}")
 
 
 # Example usage
-print(area_of_circle(1))   # 3.141592653589793
-print(area_of_circle(3))   # 28.274333882308138
+print(f"circle 1 area: {area_of_circle(1)}")  
+print(f"circle 2 area: {area_of_circle(3)}")  
 
 # Example function WITHOUT a return value
 def print_welcome_message(student_name: str) -> float:
