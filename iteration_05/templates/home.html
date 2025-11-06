@@ -1,5 +1,12 @@
-{% extends 'base.html' %} <!-- We want it to base template but to populate info for home page inside -->
-{% block title %} Home {% endblock %} <!-- inside of the title block, insert 'Home' -->
-{% block content %} <!-- inside of the block content, insert 'Welcome to the Flask Jinja2 application' -->
-<h1>Welcome to the Flask UI App!</h1>
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 class="text-3xl font-bold text-blue-700 mb-4">Welcome to My Flask App!</h1>
+<p class="text-gray-700 mb-6">This is my first website built with Flask and Jinja2.</p>
+
+<!-- Flexbox Example -->
+<div class="flex justify-center gap-4">
+  <a href="/about" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">About</a>
+  <a href="/contact" class="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-100">Contact</a>
+</div>
 {% endblock %}
