@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
 {% block title %}Contact{% endblock %}
 {% block content %}
-<h1>Contact us</h1>
+<h1 class="text-3xl font-bold text-blue-700 mb-4">Contact</h1>
 
 <p>Email: {{ contact.email }}</p>
-<p>Github: {{ contact.github }}</p>
+<p>GitHub: {{ contact.github }}</p>
 
 {% if contact.phone %}
   <p>Phone: {{ contact.phone }}</p>
 {% else %}
-  <p>Phone number not available</p>
+  <p class="text-gray-500 italic">Phone number not available</p>
 {% endif %}
-
 {% endblock %}
